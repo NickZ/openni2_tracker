@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(openni2_tracker)
 find_package(catkin REQUIRED COMPONENTS geometry_msgs
-					orocos_kdl
 					roscpp
 					roslib
 					tf)
+find_package(orocos_kdl REQUIRED)
+
 # Find OpenNI2
 #find_package(PkgConfig)
 #pkg_check_modules(OpenNI2 REQUIRED libopenni2)
